@@ -1,104 +1,97 @@
 body {
-    font-family: 'Karla', sans-serif;
-    margin: 0;
-        padding: 0;
-    
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main {
-    background-color: hsl(204, 43%, 93%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+  background-color: hsl(204, 43%, 93%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    'card-1 card-1'
-    'card-2 card-3';
-    max-height: 700px;
-    min-height: 550px;
-    max-width: 700px;
-  
-  
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "card-1 card-1"
+    "card-2 card-3";
+  max-height: 600px;
+  min-height: 450px;
+  max-width: 750px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card-1 {
-grid-area: card-1;
-background-color:white;
-padding: 2.5rem;
-color: hsl(218, 22%, 67%);
+  grid-area: card-1;
+  background-color: white;
+  padding: 2.5rem;
+  color: hsl(218, 22%, 67%);
 }
-.title{
-    color: hsl(179, 62%, 43%)
+.title {
+  color: hsl(179, 62%, 43%);
 }
-.subtitle{
-color:hsl(71, 73%, 54%);
+.subtitle {
+  color: hsl(71, 73%, 54%);
 }
 .card-2 {
-grid-area: card-2;
-background-color: hsl(179, 62%, 43%);
-color:white;
-padding: 2.5rem;
-
+  grid-area: card-2;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  padding: 2.5rem;
 }
 .button {
-    background-color: hsl(71, 73%, 54%);
-    min-width: 80%;
-    border-radius: 5px;
-   
-    color: white;
-    border: 0;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
-    margin: 1rem;
+  background-color: hsl(71, 73%, 54%);
+  min-width: 80%;
+  border-radius: 5px;
+
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
 }
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
-    border: 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  border: 0;
 }
 .price {
-    display: flex;
-    align-items: center;
-   
-    
+  display: flex;
+  align-items: center;
 }
 .card-3 {
-    grid-area: card-3;
-    padding: 2.5rem;
-    background-color: hsl(179, 46%, 49%);
-    color: white;
-    line-height: 20px;
-    
+  grid-area: card-3;
+  padding: 2.5rem;
+  background-color: hsl(179, 46%, 49%);
+  color: white;
+  line-height: 20px;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'card-1'
-        'card-2'
-        'card-3';
-    }
-    .attribution{
-        display:none;
-    }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3";
+  }
+  .attribution {
+    display: none;
+  }
 }
